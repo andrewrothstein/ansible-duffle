@@ -1,0 +1,7 @@
+---
+# vars file for duffle
+duffle_platform: '{{ duffle_os }}-{{ duffle_arch }}'
+duffle_url: '{{ duffle_mirror }}/{{ duffle_ver }}/duffle-{{ duffle_platform }}{{ duffle_suffix | default("") }}'
+duffle_exe: '{{ duffle_install_dir }}/duffle-{{ duffle_ver }}-{{ duffle_platform }}{{ duffle_suffix | default("") }}'
+duffle_link: '{{ duffle_install_dir }}/duffle'
+duffle_checksum: '{{ duffle_checksums[duffle_ver][duffle_platform] }}'
